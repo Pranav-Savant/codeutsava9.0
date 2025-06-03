@@ -892,7 +892,7 @@ button:hover {
 }
 
 .timeline-content-item {
-    transform: translateX(400px);
+    transform: translateX(150px);
     opacity: 0;
     transition: all 0.9s ease-in-out;
 }
@@ -1047,8 +1047,8 @@ textarea {
         background-color: rgba(128, 128, 128, 0.1);
         backdrop-filter: blur(5px);
         border-radius: 100px;
-        box-shadow: 0 0 8px #00d1c1;
-        color: yellow;
+        box-shadow: 0 0 8px red;
+        color: red;
         display: flex;
         justify-content: center;
         align-items: center;
