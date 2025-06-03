@@ -1,0 +1,24 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Chart background -->
+  <rect x="12" y="14" width="40" height="36" fill="#1E1E2F" stroke="#8AB6F9" stroke-width="2" rx="4"></rect>
+
+  <!-- Checklist lines -->
+  <line x1="20" y1="26" x2="44" y2="26" stroke="#8AB6F9" stroke-width="2"></line>
+  <line x1="20" y1="34" x2="44" y2="34" stroke="#8AB6F9" stroke-width="2"></line>
+  <line x1="20" y1="42" x2="44" y2="42" stroke="#8AB6F9" stroke-width="2"></line>
+
+  <!-- Check marks as stars -->
+  <circle cx="16" cy="26" r="3" fill="#FFFFFF" stroke="#8AB6F9" stroke-width="1"></circle>
+  <circle cx="16" cy="34" r="3" fill="#FFFFFF" stroke="#8AB6F9" stroke-width="1"></circle>
+  <circle cx="16" cy="42" r="3" fill="#FFFFFF" stroke="#8AB6F9" stroke-width="1"></circle>
+
+  <!-- Stars details -->
+  <line x1="14" y1="24" x2="18" y2="28" stroke="#8AB6F9" stroke-width="1"></line>
+  <line x1="18" y1="24" x2="14" y2="28" stroke="#8AB6F9" stroke-width="1"></line>
+
+  <line x1="14" y1="32" x2="18" y2="36" stroke="#8AB6F9" stroke-width="1"></line>
+  <line x1="18" y1="32" x2="14" y2="36" stroke="#8AB6F9" stroke-width="1"></line>
+
+  <line x1="14" y1="40" x2="18" y2="44" stroke="#8AB6F9" stroke-width="1"></line>
+  <line x1="18" y1="40" x2="14" y2="44" stroke="#8AB6F9" stroke-width="1"></line>
+</svg>

@@ -1,0 +1,24 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Mask for ring part in front of planet -->
+    <mask id="ringFrontMask">
+      <!-- Everything visible by default -->
+      <rect width="100%" height="100%" fill="white"></rect>
+      <!-- Cut out the planet circle -->
+      <circle cx="32" cy="32" r="12" fill="black"></circle>
+    </mask>
+  </defs>
+
+  <!-- Full Elliptical Ring (Behind) -->
+  <ellipse cx="32" cy="34" rx="22" ry="6" transform="rotate(-15 32 34)" stroke="#8AB6F9" stroke-width="2" fill="none" opacity="0.4"></ellipse>
+
+  <!-- Planet -->
+  <circle cx="32" cy="32" r="12" fill="#1E1E2F" stroke="#FFFFFF" stroke-width="2"></circle>
+
+  <!-- Question Mark -->
+  <path d="M32 24C30.3 24 29 25.3 29 27H27C27 24.2 29.2 22 32 22C34.8 22 37 24.2 37 27C37 29 35.6 30 34.5 30.7C33.3 31.5 32.5 32.1 32.5 34H30.5C30.5 31.9 31.9 30.9 33 30.2C34.1 29.5 35 29 35 27.5C35 25.8 33.7 24 32 24Z" fill="#FFFFFF"></path>
+  <circle cx="32" cy="39" r="2" fill="#FFFFFF"></circle>
+
+  <!-- Elliptical Ring (Front Portion Overlapping Planet) -->
+  <ellipse cx="32" cy="34" rx="22" ry="6" transform="rotate(-15 32 34)" stroke="#8AB6F9" stroke-width="2" fill="none" mask="url(#ringFrontMask)"></ellipse>
+</svg>

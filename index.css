@@ -1,0 +1,1223 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+.intro-screen {
+    display: flex;
+    flex-direction: column;
+    transition: opacity 2s ease;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    top: 30%;
+    right: 0;
+    left: 0;
+}
+
+body {
+    /* min-width: 320px; */
+    min-height: 100vh;
+    cursor: url(https://cur.cursors-4u.net/mechanics/mec-1/mec57.cur), auto !important;
+}
+
+.bg-video {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#intro-video {
+    opacity: 1;
+}
+
+.contact-modal-heading {
+    font-size: 30px;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.contact-modal-submit-button {
+    height: 25px;
+    margin: 0;
+    font-size: 10px;
+    width: 100px;
+}
+
+.modal3-404 {
+    font-size: 70px;
+}
+
+.modal3-text {
+    flex: 1;
+    font-size: 40px;
+}
+
+.page404-backtohome-button {
+    border: 2px solid yellow;
+    font-size: 30px;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 50px
+}
+
+.scroll-down {
+    position: absolute;
+    top: 200px;
+    left: -20px;
+    transform: rotateZ(90deg);
+    display: flex;
+    align-items: center;
+}
+
+.scroll-down-link {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-bar-left_section-image {
+    height: 90px;
+}
+
+.nav-bar-mid_section {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-links {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navbar-links:hover {
+    color: #8b44ec;
+    text-decoration: underline;
+    text-decoration-color: #1E90FF;
+}
+
+.codeutsava-intro {
+    font-size: 60px;
+    background-color: rgba(128, 128, 128, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 100px;
+    box-shadow: 0 0 8px #00d1c1;
+    color:red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    margin-top: -30px;
+    text-align: center;
+}
+
+button {
+    z-index: 10;
+    margin-top: 30px;
+    width: 524px;
+    color: yellow;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 20px;
+    border: 2px solid yellow;
+    background-color: transparent;
+    transition: 0.3s linear;
+}
+
+button:hover {
+    background-color: yellow;
+    color: black;
+    box-shadow: 0 0 25px yellow;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border-bottom: 2px solid #1E90FF;
+    position: fixed;
+    z-index: 1000;
+    right: 0;
+    left: 0;
+    top: 0px;
+    animation-name: myname;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0.1s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+@keyframes myname {
+    0% {
+        top: 0px;
+    }
+
+    25% {
+        top: 10px
+    }
+
+    100% {
+        top: -100px;
+    }
+}
+
+.nav-bar_menu {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.nav-bar_menu-item {
+    list-style: none;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar_menu-item:hover {
+    color: #1E90FF;
+}
+
+.aboutus-icon {
+    height: 35px;
+    border-radius: 50%;
+}
+
+.faq-icon {
+    height: 60px
+}
+
+.contactus-icon {
+    height: 60px;
+    margin-left: -10px;
+}
+
+.team-icon {
+    height: 45px;
+    margin-top: -15px;
+}
+
+.guideline-icon {
+    height: 35px;
+}
+
+.nav-bar-right_section-image {
+    height: 70px;
+    padding-top: 6px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.welcome-image {
+    height: 300px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.sidelinks-line {
+    color: #8b44ec;
+    font-size: 40px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.codeutsava__section1-side-links {
+    right: 46px;
+    top: 45%;
+    line-height: 50px;
+    position: absolute;
+    z-index: 999;
+    list-style: none;
+    text-align: center;
+}
+
+.sidelink:hover {
+    fill: #1E90FF;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: grey;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1E90FF;
+    border-radius: 10px;
+}
+
+.home-text {
+    color: #1E90FF;
+    text-align: center;
+}
+
+.home-text1 {
+    font-size: 50px;
+}
+
+.home-text2 {
+    font-size: 28px;
+}
+
+.highlighted-text {
+    color: #8b44ec;
+}
+
+.participants-section {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.participants {
+    flex: 0.5;
+    font-size: 50px;
+    color: #8b44ec;
+}
+
+.participants-info {
+    color: #1E90FF;
+    display: flex;
+    box-shadow: 0 0 10px white;
+    width: 100%;
+    flex: 1;
+    justify-content: space-evenly;
+    font-size: 20px;
+    align-items: center;
+    background-color: rgb(128, 128, 128, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.participants-info-item {
+    box-shadow: 0 0 10px #1E90FF;
+    color: #1E90FF;
+    border-radius: 50px;
+    padding: 25px;
+}
+
+.aboutus-section {
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.aboutus-heading {
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    color: #8b44ec;
+}
+
+#AMT {
+    opacity: 0;
+    transform: translateY(150px);
+    transition: all 0.6s ease-out;
+    /* margin:100vh auto; */
+}
+
+#AMT.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.structure {
+    display: flex;
+    box-shadow: 0 0 10px white;
+    padding-top: 100px;
+    background-color: rgb(128, 128, 128, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.container {
+    width: 800px;
+    height: 800px;
+    position: relative;
+    align-self: center;
+}
+
+.sun {
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle, orange, yellow);
+    border-radius: 50%;
+    box-shadow: 0 0 25px orange;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.planet-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    transform-origin: center;
+    animation: rotate 20s linear infinite;
+}
+
+.planet {
+    width: 35px;
+    height: 35px;
+    transform: translateX(var(--distance));
+}
+
+.planet img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 4px #1E90FF);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.orbit1 {
+    width: 180px;
+    height: 180px;
+}
+
+.orbit2 {
+    width: 250px;
+    height: 250px;
+}
+
+.orbit3 {
+    width: 320px;
+    height: 320px;
+}
+
+.orbit4 {
+    width: 390px;
+    height: 390px;
+}
+
+.orbit5 {
+    width: 460px;
+    height: 460px;
+}
+
+.orbit6 {
+    width: 530px;
+    height: 530px;
+}
+
+.orbit7 {
+    width: 600px;
+    height: 600px;
+}
+
+.planet1 {
+    --distance: 75px;
+    animation: rotate 10s linear infinite;
+}
+
+.planet2 {
+    --distance: 110px;
+    animation: rotate 12s linear infinite;
+}
+
+.planet3 {
+    --distance: 145px;
+    animation: rotate 14s linear infinite;
+}
+
+.planet4 {
+    --distance: 180px;
+    animation: rotate 16s linear infinite;
+}
+
+.planet5 {
+    --distance: 215px;
+    animation: rotate 18s linear infinite;
+}
+
+.planet6 {
+    --distance: 250px;
+    animation: rotate 20s linear infinite;
+}
+
+.planet7 {
+    --distance: 285px;
+    animation: rotate 22s linear infinite;
+}
+
+.aboutus-text {
+    flex: 1;
+    height: 100%;
+    font-size: 22px;
+    color: #1E90FF;
+}
+
+.Home-page {
+    display: none;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease;
+}
+
+
+.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media(max-width:1030px) {
+    .structure {
+        flex-direction: column;
+    }
+}
+
+.Sponsers {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    padding-top: 90px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 50px;
+    color: #8b44ec;
+}
+
+.sponser-icons {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.Timeline {
+    padding-top: 90px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-heading {
+    font-size: 50px;
+    color: #8b44ec;
+}
+
+.timeline-structure {
+    display: flex;
+    flex: 1
+}
+
+.timeline-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    margin-left: 100px;
+    color: #1E90FF
+}
+
+.vertical-line {
+    width: 2px;
+    height: 2000px;
+    background-color: white;
+    position: absolute;
+    left: 100px;
+    z-index: -1;
+    margin-top: 100px;
+}
+
+.timeline-content-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+}
+
+.badge-image {
+    height: 120px;
+    border-radius: 60px;
+    margin-left: -57px;
+}
+
+.date {
+    font-size: 30px;
+    color: white;
+    padding-left: 20px;
+    flex: 1;
+}
+
+.timeline-info {
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 0 10px white;
+    padding-left: 20px;
+    flex-direction: column;
+    flex: 1;
+    background-color: rgb(128, 128, 128, 0.1);
+    backdrop-filter: blur(5px);
+    text-align: start;
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+.timeline-info-heading {
+    font-size: 30px;
+    color: rgb(251, 56, 56);
+}
+
+.timeline-info-text {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.prizes {
+    padding-top: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.prizes-heading {
+    font-size: 50px;
+    color: #8b44ec;
+}
+
+.outermost-prizes-box {
+    display: flex;
+    width: 100%;
+    flex: 1;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.outer-prizes-box {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+.inner-prizes-box {
+    width: 300px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 10px solid white;
+    border-radius: 50px;
+}
+
+.inner-prizes-heading {
+    text-align: center;
+    font-size: 16px;
+    padding: 20px 30px 0px 30px;
+    color: rgb(251, 56, 56);
+}
+
+.inner-prizes-text {
+    width: 200px;
+}
+
+.inner-prizes-text-list {
+    padding-top: 20px;
+    font-size: 12px;
+    padding-bottom: 30px;
+    color: #1E90FF;
+}
+
+.outer-prizes-box-lastrow {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#guidelines {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guidelines-heading {
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    color: #8b44ec;
+}
+
+.guidelines-info {
+    color: #1E90FF;
+    background-color: rgb(128, 128, 128, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    box-shadow: 0 0 10px white;
+    width: 90%;
+    padding-left: 50px;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.guidelines-info-heading {
+    text-align: center;
+    font-size: 35px;
+    color: rgb(251, 56, 56);
+}
+
+.guidelines-info-text-list {
+    padding: 30px 0;
+    font-size: 20px;
+}
+
+.guidelines-info-text {
+    font-size: 20px;
+}
+
+.guidelines-button {
+    display: flex;
+    justify-content: center;
+}
+
+.Graph {
+    padding-top: 100px;
+    width: 90%;
+}
+
+.Graph-heading {
+    font-size: 50px;
+    text-align: center;
+    color: #8b44ec;
+}
+
+.graph-images {
+    display: flex;
+    background-color: rgb(128, 128, 128, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    box-shadow: 0 0 10px white;
+    padding: 100px 0px
+}
+
+.graph-class {
+    flex: 1;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.Question-box {
+    padding-top: 100px;
+}
+
+.Question {
+    text-align: center;
+    font-size: 50px;
+    color: #8b44ec;
+}
+
+.Question-box-button {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border-top: 2px solid #1E90FF;
+    height: 500px;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-div1 {
+    display: flex;
+    padding: 20px 60px 0px 60px;
+    display: flex;
+}
+
+.footer-logos {
+    flex: 1;
+    padding-left: 20px;
+    display: flex;
+}
+
+.footer-socialmedia {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: end;
+}
+
+.footer-socialmedia-text1,
+.footer-socialmedia-text2 {
+    font-size: 20px;
+    color: rgb(251, 56, 56)
+}
+
+.footer-socialmedia-text1 {
+    margin-top: 10px;
+}
+
+.footer-div2 {
+    padding: 0px 60px;
+    display: flex;
+}
+
+.footer-aboutnit {
+    flex: 1;
+    display: flex;
+    padding: 10px 0px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.footer-nit-logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-aboutnit-info {
+    flex: 2;
+}
+
+.footer-aboutnit-info-heading {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 5px;
+    color: rgb(251, 56, 56)
+}
+
+.footer-aboutnit-info-text {
+    font-size: 19px;
+    color: #1E90FF;
+}
+
+.footer-extra {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-size: 25px;
+}
+
+.extra-links {
+    color: white;
+    text-decoration: none;
+}
+
+.extra-links:hover {
+    color: #8b44ec;
+    text-decoration: underline;
+    text-decoration-color: #1E90FF;
+}
+
+.footer-div3 {
+    height: 60px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 0px 60px;
+}
+
+.BTT {
+    color: white;
+    text-decoration: none;
+    flex: 1
+}
+
+.BTT:hover {
+    color: #1E90FF
+}
+
+.timeline-content-item {
+    transform: translateX(400px);
+    opacity: 0;
+    transition: all 0.9s ease-in-out;
+}
+
+.timeline-content-item.visible {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.Modal1,
+.Modal2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000000;
+}
+
+.contact-modal {
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    position: relative;
+    width: 1000px;
+    height: 550px;
+    background-color: rgb(128, 128, 128, 0.6);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px white;
+    color:#8b44ec;
+}
+
+.team-modal {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    width: 1000px;
+    height: 550px;
+    color:#8b44ec;
+    background-color: rgb(128, 128, 128, 0.6);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    box-shadow: 0 0 20px white;
+}
+
+.close {
+    font-size: 25px;
+    padding-right: 10px;
+    align-self: flex-end;
+}
+
+.details {
+    display: flex;
+    align-self: center;
+    width: 700px;
+    height: 500px;
+    background-color: transparent;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input,
+textarea {
+    width: 400px
+}
+
+.details-item {
+    margin: 15px 0;
+}
+
+.details-item-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.inputs {
+    height: 30px;
+}
+
+.team-details-item {
+    margin-top: 70px;
+    font-size: 35px;
+}
+
+#modal1:target {
+    display: flex;
+}
+
+#modal2:target {
+    display: flex;
+}
+
+.Modal3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255, 1);
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 1000000;
+}
+
+.page404 {
+    width: 100%;
+    height: 100%;
+}
+
+.page404-backtohome-button {
+    color: black;
+    text-decoration: none;
+}
+
+.page404-backtohome-button:hover {
+    background-color: yellow;
+
+}
+
+#modal3:target {
+    display: flex;
+}
+
+#Layer_1 {
+    height: 35px;
+    position: relative;
+}
+
+.st0 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #A1E367;
+}
+
+.st1 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #2394E0;
+}
+
+@media(max-width:600px) {
+    .codeutsava-intro {
+        font-size: 30px;
+        background-color: rgba(128, 128, 128, 0.1);
+        backdrop-filter: blur(5px);
+        border-radius: 100px;
+        box-shadow: 0 0 8px #00d1c1;
+        color: yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 900;
+        margin-top: -30px;
+        text-align: center;
+    }
+
+    button {
+        width: 300px;
+    }
+
+    .footer-aboutnit-info-heading {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 5px;
+        color: rgb(251, 56, 56)
+    }
+
+    .footer-aboutnit-info-text {
+        font-size: 10px;
+        color: #1E90FF;
+    }
+
+    .footer-div2 {
+        padding: 0;
+        display: flex;
+    }
+
+    .footer-div1 {
+        display: flex;
+        padding: 0;
+        display: flex;
+    }
+
+    .footer-div3 {
+        height: 60px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        font-size: 10px;
+        padding: 0;
+    }
+
+    .graph-images {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(128, 128, 128, 0.1);
+        backdrop-filter: blur(5px);
+        border-radius: 30px;
+        box-shadow: 0 0 10px white;
+        padding: 10px 0px
+    }
+
+    .extra-links {
+        font-size: 15px;
+    }
+
+    .footer-socialmedia-text1,
+    .footer-socialmedia-text2 {
+        font-size: 10px;
+    }
+
+    .scroll-down {
+        display: none;
+    }
+
+    .welcome-image {
+        height: 150px;
+    }
+
+    .home-text1 {
+        font-size: 20px;
+    }
+
+    .home-text2 {
+        font-size: 15px;
+    }
+}
+
+@media(max-width:900px)and (min-width:600px) {
+    .welcome-image {
+        height: 200px;
+    }
+
+    .home-text1 {
+        font-size: 30px;
+    }
+
+    .home-text2 {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:800px) {
+    .nav-bar_menu {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .nav-bar {
+        position: static;
+    }
+
+    .welcome-image {
+        margin-top: 300px;
+    }
+
+    .sidelink {
+        display: none;
+    }
+
+    .sidelinks-line {
+        display: none;
+    }
+
+    .participants-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .participants-info-item {
+        height: 50px;
+        margin: 10px 0px;
+    }
+
+    .participants {
+        font-size: 30px;
+    }
+
+    .aboutus-text {
+        font-size: 15px;
+    }
+
+    .structure {
+        width: 100%;
+    }
+    .date{
+        font-size: 15px;
+    }
+    .timeline-info-heading{
+        font-size: 20px;
+    }
+    .timeline-info-text{
+        font-size: 17px;
+    }
+    .outer-prizes-box{
+        display: block;
+    }
+    .outermost-prizes-box{
+        align-items: center;
+    }
+}
+@media(max-width:500px){
+    .vertical-line{
+        display: none;
+    }
+    .badge{
+        display: none;
+    }
+    .timeline-content{
+        margin-left: 0;
+    }
+}
+@media(max-width:700px){
+    .contact-modal{
+        width:100%;
+    }
+    .team-modal{
+        width:100%;
+    }
+}
