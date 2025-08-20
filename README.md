@@ -1,15 +1,30 @@
-# Codeutsava9.0
-NAME: PRANAV SAI SUMIRAN SAVANT
-<br>
-BRANCH: CSE
-<br>
-EMAIL ID: pranavsavant1056@gmail.com
-<br>
-PHONE NUMBER: 7842609049
-<br>
-THEME: OUTER SPACE
-<br>
-“Outer Space” symbolizes exploration, innovation, and boundless potential—just like the world of technology. Our design orbits around cosmic elements to represent different technologies and ideas as planets and stars, reflecting how they interact in the vast digital universe. This theme inspires curiosity, discovery, and the drive to reach beyond limits—much like space explorers venturing into the unknown.”
+# 🌌 Codeutsava 9.0 Trial Website  
 
+*A frontend trial website built for Codeutsava 9.0 — the annual hackathon of NIT Raipur.*  
 
+### 📌 Description  
+This project is a **frontend-only event website** designed with a **Space Theme** to match the branding of Codeutsava 9.0.  
+It features sections like **Home, About, and Contact**, styled with a **futuristic aesthetic, dark mode elements, and orbit-inspired visuals**.  
+Special focus was given to **clean layout, reusable CSS, and pixel-perfect design** for consistency across all pages.  
+
+### 🔗 Live Demo  
+👉 [View Project](https://chipper-marshmallow-260792.netlify.app/)  
+
+### 💻 Features  
+- Multiple sections: Home, About, Contact  
+- Reusable CSS components for consistency  
+- Pixel-perfect, responsive layout  
+
+### 🛠️ Tech Stack  
+- **HTML**  
+- **CSS**  
+- **JavaScript**
+  
+### Demo Video 
 [Watch the demo on YouTube](https://youtu.be/NeUl2kfyhUc)
+
+### ⚡ How to Run Locally  
+```bash
+git clone https://github.com/Pranav-Savant/codeutsava9.0.git
+cd Codeutsava-Website
+open index.html   # or double-click index.html
